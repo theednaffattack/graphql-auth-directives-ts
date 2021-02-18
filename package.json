@@ -12,7 +12,7 @@
     "dev": "nodemon",
     "start-test-setup": "babel-node ./test/helpers/test-setup.js",
     "test": "ava test/*.js",
-    "build": "babel src --out-dir dist",
+    "build": "tsc",
     "precommit": "lint-staged",
     "prepublish": "npm run build",
     "pretest": "npm run build"
